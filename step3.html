@@ -1,0 +1,138 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, maximum-scale=6.0, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="4185F4">
+        <link rel="apple-touch-icon" href="/img/coat-of-arms-LR.png">
+        <title> Mission appointment management system</title>
+        <link href="/dist/app.css?v=1711393406" rel="stylesheet">        <link rel="preload" href="/fonts/Raleway-regular/raleway-regular.woff2" as="font" type="font/woff2" crossorigin>
+    </head>
+    <body>
+    <div class="header-background">
+    <header>
+        <div class="container-section">
+            <div class="inner-container">
+                <div class="header--wrapper">
+                    <div class="embassy--wrapper">
+                        <div class="header-content">
+                            <img alt="Coat of Arms" class="coat-of-arms " src="/img/coat-of-arms-LR.png"/>
+                        </div>
+                        <div class="header-content">
+                            <h1 class="text--title">EMBASSY OF THE REPUBLIC OF LATVIA IN THE REPUBLIC OF INDIA </h1>
+                        </div>
+                    </div>
+                                            <div class="header-content">
+                            
+
+<ul class="language--wrapper">
+                    <li class="language "><a href="/lv/indija" hreflang="lv"
+                                               class="text--lang">
+                LV            </a></li>
+                    <li class="language active"><a href="/en/india" hreflang="en"
+                                               class="text--lang">
+                EN            </a></li>
+    </ul>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </header>
+</div>
+        <main class="container-section">
+        
+<section class="inner-container">
+    <div class="back-nav--wrapper">
+    <a class="back-nav" href="/en/india/step2">
+        <span class="arrow-left"><</span>
+        <p class="text--nav ">Back</p>    </a>
+</div>
+        <form id="mfa-form3" autocomplete="off" method="post" novalidate>
+        <input class="help" type="hidden" name="_csrf-mfa-scheduler"
+               value="mFKCkP1mpzmH1RZ0p5gphzrsxGoB-R4brHO_D8vgpxrxHLT7hxfdUvWKWhjf2mf0CKj2BUW4cmPjK_x7mbPtWQ==">
+        <div class="form">
+            <div class="form-content--wrapper">
+                <div class="section-base--wrapper">
+                    <fieldset class="section-base">
+                        <section class="calendar" id="calendar">
+    <div class="calendar--wrapper">
+        <div class="calendar-nav">
+            <div class="calendar-text--wrapper">
+                <p class="text--subtitle ">Date selection</p>            </div>
+            <div class="calendar-nav--wrapper">
+                <button class="calendar-prev" aria-label="Previous month"><</button>
+                <div class="month-text--wrapper">
+                    <p id="display-month" class="text--month" data-month-year=""></p>
+                </div>
+                <button class="calendar-next" aria-label="Next month">></button>
+            </div>
+        </div>
+        <table class="calendar-container">
+            <thead>
+            <tr>
+                <td>Mon</td>
+                <td>Tue</td>
+                <td>Wed</td>
+                <td>Thu</td>
+                <td>Fri</td>
+                <td>Sat</td>
+                <td>Sun</td>
+            </tr>
+            </thead>
+            <tbody id="calendar-daygrid">
+            </tbody>
+        </table>
+        <span class="loader" id="loader"></span>
+    </div>
+</section>
+<div class="calendar-description">
+    <span class="dot--grey"><img src="" alt=""/></span>    <p class="text--description ">Available dates</p></div>                    </fieldset>
+                    <fieldset class="section-base">
+                        <div class="service-time--wrapper">
+                        <span id="time-services">
+                        <p class="text--subtitle ">Choose time</p>                            </span>
+                            <div id="services">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="message"></div>
+                                            <p class="text--action margin-top-20">Appointments are available until: 2024-10-31</p>
+                                    </div>
+            </div>
+            <div id="step3-next-btn" class="btn-next-step--wrapper">
+                <button type="submit" class="btn-next-step text--submit ">Next step</button>            </div>
+        </div>
+    </form>
+</section>
+    </main>
+    <script src="/dist/app.js?v=1711393406"></script>
+    <script type="text/javascript">
+        var months_translated = ['',
+            'January',
+            'February',
+            'March',
+            'April',
+            'May ',
+            'June',
+            'July',
+            'August',
+            'September',
+            'October',
+            'November',
+            'December'];
+        var visitor_translated = [
+            'Visitor',
+            'Name',
+            'Surname'];
+        var error_translated = [
+            'Fill in empty fields'];
+        var services_translated = [
+            'Group of services available at the same time',
+            'Available times'];
+    </script>
+    </body>
+    </html>

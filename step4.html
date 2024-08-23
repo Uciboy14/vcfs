@@ -1,0 +1,132 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, maximum-scale=6.0, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="4185F4">
+        <link rel="apple-touch-icon" href="/img/coat-of-arms-LR.png">
+        <title> Mission appointment management system</title>
+        <link href="/dist/app.css?v=1711393406" rel="stylesheet">        <link rel="preload" href="/fonts/Raleway-regular/raleway-regular.woff2" as="font" type="font/woff2" crossorigin>
+    </head>
+    <body>
+    <div class="header-background">
+    <header>
+        <div class="container-section">
+            <div class="inner-container">
+                <div class="header--wrapper">
+                    <div class="embassy--wrapper">
+                        <div class="header-content">
+                            <img alt="Coat of Arms" class="coat-of-arms " src="/img/coat-of-arms-LR.png"/>
+                        </div>
+                        <div class="header-content">
+                            <h1 class="text--title">EMBASSY OF THE REPUBLIC OF LATVIA IN THE REPUBLIC OF INDIA </h1>
+                        </div>
+                    </div>
+                                            <div class="header-content">
+                            
+
+<ul class="language--wrapper">
+                    <li class="language "><a href="/lv/indija" hreflang="lv"
+                                               class="text--lang">
+                LV            </a></li>
+                    <li class="language active"><a href="/en/india" hreflang="en"
+                                               class="text--lang">
+                EN            </a></li>
+    </ul>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </header>
+</div>
+        <main class="container-section">
+        
+<section class="inner-container">
+    <div class="back-nav--wrapper">
+    <a class="back-nav" href="/en/india/step3">
+        <span class="arrow-left"><</span>
+        <p class="text--nav ">Back</p>    </a>
+</div>
+    <form id="mfa-form4" autocomplete="off" method="post" novalidate>
+        <input class="help" type="hidden" name="_csrf-mfa-scheduler"
+               value="Fa0c1r0Oa7dkHcnu5BKZguVymYAydWyebaA6k9XVboZ84yq9x38R3BZChYKcUNfx1zar73Y0AOYi-Hnnh4YkxQ==">
+        <div class="form">
+            <div class="form-content--wrapper margin-top-40">
+                <div class="section-base--wrapper">
+                    <fieldset class="section-base">
+                        <div class="service-group--wrapper">
+                                                            <div class="service-group">
+                                    <p class="text--subtitle ">23. August, 2024 12:30</p>                                                                            <p class="text--description ">Certificate of non-convictions</p>                                                                    </div>
+                                                    </div>
+                    </fieldset>
+                                                                                    <fieldset class="section-base">
+                                                    <div class="textarea--wrapper">
+    <label for="notes_public">
+        <p class="text--subtitle ">Please provide additional information that You consider relevant.</p>    </label>
+    <textarea class="form-textarea" rows="8" id="notes_public"
+              name="notes_public"></textarea>
+</div>
+                                                <input type="hidden" name="reCaptcha" value="" data-sitekey=6LcNh8QUAAAAABr3tVBk1tkgg8xlr1DDmmYtGwCA>
+                                            </fieldset>
+                </div>
+            </div>
+            <div id="gdpr" class=" form-checkbox--wrapper">
+    <input id="personal-data"
+       name="personal-data"
+       type="checkbox"
+       value="" >    <span class="form-checkbox"><img class="checkbox-img" src="/img/checkmark.png" alt="check"></span>
+    <label for="personal-data>"
+           class="text--dropdown-service">I agree with the data processing provisions to receive the service. More information is available <a target="_blank" href=" https://www.mfa.gov.lv/en/privacy-policy-ministry-foreign-affairs">here</a>.</label>
+</div>
+            <div class="btn-next-step--wrapper">
+                <button type="submit" class="btn-next-step text--submit ">Approve</button>            </div>
+    </form>
+</section>
+    </main>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcNh8QUAAAAABr3tVBk1tkgg8xlr1DDmmYtGwCA"></script>
+<script src="/dist/app.js?v=1711393406"></script>
+<script>    function handleMfaStep4FormSubmit(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LcNh8QUAAAAABr3tVBk1tkgg8xlr1DDmmYtGwCA', {action: 'formsubmit'}).then(function(token) {
+                var form = document.getElementById('mfa-form4');
+                var input = form.querySelector('input[name="reCaptcha"]');
+                input.value = token;
+                form.submit();
+            });
+        });
+    }
+    
+   document.addEventListener('DOMContentLoaded', function() {
+       document.getElementById('mfa-form4').addEventListener('submit', handleMfaStep4FormSubmit);
+   });</script>
+    <script type="text/javascript">
+        var months_translated = ['',
+            'January',
+            'February',
+            'March',
+            'April',
+            'May ',
+            'June',
+            'July',
+            'August',
+            'September',
+            'October',
+            'November',
+            'December'];
+        var visitor_translated = [
+            'Visitor',
+            'Name',
+            'Surname'];
+        var error_translated = [
+            'Fill in empty fields'];
+        var services_translated = [
+            'Group of services available at the same time',
+            'Available times'];
+    </script>
+    </body>
+    </html>

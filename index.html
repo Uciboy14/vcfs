@@ -1,0 +1,141 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, maximum-scale=6.0, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="4185F4">
+        <link rel="apple-touch-icon" href="/img/coat-of-arms-LR.png">
+        <title> Mission appointment management system</title>
+        <link href="/dist/app.css?v=1711393406" rel="stylesheet">        <link rel="preload" href="/fonts/Raleway-regular/raleway-regular.woff2" as="font" type="font/woff2" crossorigin>
+    </head>
+    <body>
+    <div class="header-background">
+    <header>
+        <div class="container-section">
+            <div class="inner-container">
+                <div class="header--wrapper">
+                    <div class="embassy--wrapper">
+                        <div class="header-content">
+                            <img alt="Coat of Arms" class="coat-of-arms " src="/img/coat-of-arms-LR.png"/>
+                        </div>
+                        <div class="header-content">
+                            <h1 class="text--title">EMBASSY OF THE REPUBLIC OF LATVIA IN THE REPUBLIC OF INDIA </h1>
+                        </div>
+                    </div>
+                                            <div class="header-content">
+                            
+
+<ul class="language--wrapper">
+                    <li class="language "><a href="/lv/indija" hreflang="lv"
+                                               class="text--lang">
+                LV            </a></li>
+                    <li class="language active"><a href="/en/india" hreflang="en"
+                                               class="text--lang">
+                EN            </a></li>
+    </ul>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </header>
+</div>
+        <main class="container-section">
+            <section class="inner-container padding-form">
+        <form id="mfa-form1" class="mfa-form" method="post" autocomplete="off" novalidate>
+            <input id="id" name="branch_office_id" type="hidden" value="15">
+            <input class="help" type="hidden" name="_csrf-mfa-scheduler"
+                   value="fln61cbjTst8R7t7wKu80O89r_n7pmxr4FAfg7OtzfdLBo6YqrAYik0Iwxbw08WEn1ebrKLkLiXSNH331dr_mA==">
+            <div class="form">
+                                                <section class="section-base info-notification margin-bottom-40">
+                    <p class="text--subtitle">For booking an appointment please provide correct information: name, surname, private e-mail address and mobile phone. Kindly be informed that in case the information will be incorrect your booking will be deleted.</p>
+                </section>
+                                                <section class="section-base info-notification margin-bottom-40">
+                    <p class="text--subtitle">To sign in, please provide the required information.</p>
+                </section>
+                <div class="form-content--wrapper">
+                    <div class="section-base--wrapper">
+                        <fieldset class="section-base visitor">
+                            <legend class="form-legend text--subtitle ">Visitor</legend>                                                            <div class="form-field">
+    <input class="form-input " type="text" id="Persons[0][first_name]" name="Persons[0][first_name]"
+           value="">
+    <label class="form-label text"
+           for="Persons[0][first_name]">Name</label>
+    <p class="error "></p>
+</div>                                <div class="form-field">
+    <input class="form-input " type="text" id="Persons[0][last_name]" name="Persons[0][last_name]"
+           value="">
+    <label class="form-label text"
+           for="Persons[0][last_name]">Surname</label>
+    <p class="error "></p>
+</div>                                                        <div class="form-field">
+    <input class="form-input " type="text" id="e_mail" name="e_mail"
+           value="">
+    <label class="form-label text"
+           for="e_mail">E-mail</label>
+    <p class="error "></p>
+</div>                            <div class="form-field">
+    <input class="form-input " type="text" id="e_mail_repeat" name="e_mail_repeat"
+           value="">
+    <label class="form-label text"
+           for="e_mail_repeat">E-mail (repeat)</label>
+    <p class="error "></p>
+</div>                            <div class="form-field">
+    <input class="form-input " type="text" id="phone" name="phone"
+           value="">
+    <label class="form-label text"
+           for="phone">Phone number (with country code, +371....)</label>
+    <p class="error "></p>
+</div>                        </fieldset>
+                    </div>
+
+                    <div class="section-dynamic--wrapper">
+                                            </div>
+                    <div id="dyn-section" class="section-dynamic--wrapper">
+                    </div>
+                </div>
+                <div id="add-visitor" class="btn-next-step--wrapper">
+                    <button class="btn-add-visitor js-addVisitor" type="button">
+    <span class="dot--blue"><img src="/img/plus.png" alt=""/></span>    <span class="text--action">Add additional visitor</span>
+</button>
+                </div>
+                <div id="step1-next-btn" class="btn-next-step--wrapper">
+                    <button type="submit" class="btn-next-step text--submit ">Next step</button>                </div>
+            </div>
+        </form>
+    </section>
+<div id="notification" class="ie-notification">
+    <div class="notification--wrapper">
+        <img class="attention" src="/svg/attention.svg" alt="SVG Image">        <p class="text--success ">You are using an outdated version of Internet Explorer! We recommend updating your Internet browser version.</p>    </div>
+</div>
+    </main>
+    <script src="/dist/app.js?v=1711393406"></script>
+    <script type="text/javascript">
+        var months_translated = ['',
+            'January',
+            'February',
+            'March',
+            'April',
+            'May ',
+            'June',
+            'July',
+            'August',
+            'September',
+            'October',
+            'November',
+            'December'];
+        var visitor_translated = [
+            'Visitor',
+            'Name',
+            'Surname'];
+        var error_translated = [
+            'Fill in empty fields'];
+        var services_translated = [
+            'Group of services available at the same time',
+            'Available times'];
+    </script>
+    </body>
+    </html>
